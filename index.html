@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            height: 80px;
+            width: 660px;
+            
+        }
+        .c:nth-of-type(2n){
+            background-color:black;
+        }
+        .c:nth-of-type(2n+1){
+            background-color:white;
+        }
+        .d:nth-of-type(2n+1){
+            background-color: black;
+        }
+        .d:nth-of-type(2n){
+            background-color:white;
+        }
+        .e:nth-of-type(2n){
+            background-color: black;
+        }
+        .e:nth-of-type(2n+1){
+            background-color:white;
+        }
+        .f:nth-of-type(2n+1){
+            background-color: black;
+        }
+        .f:nth-of-type(2n){
+            background-color:white;
+        }
+        .g:nth-of-type(2n){
+            background-color: black;
+        }
+        .g:nth-of-type(2n+1){
+            background-color:white;
+        }
+        .h:nth-of-type(2n+1){
+            background-color: black;
+        }
+        .h:nth-of-type(2n){
+            background-color:white;
+        }
+        .i:nth-of-type(2n){
+            background-color: black;
+        }
+        .i:nth-of-type(2n+1){
+            background-color:white;
+        }
+        .j:nth-of-type(2n+1){
+            background-color: black;
+        }
+        .j:nth-of-type(2n){
+            background-color:white;
+        }
+        .c1{
+            
+            background-image:url("../pics/images/chess\ rook.webp") ;
+            background-size: 90px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c2{
+            background-image: url("../pics/images/chess\ knight\ black.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c3{
+            background-image: url("../pics/images/chess\ bishop.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c4{
+            background-image: url("../pics/images/chess\ king\ black.avif");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c5{
+            background-image: url("../pics/images/chess\ queen.webp");
+            background-size: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c6{
+            background-image: url("../pics/images/chess\ bishop\ black.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c7{
+            background-image: url("../pics/images/chess\ knight.jpg");
+            background-size: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c8{
+            background-image: url("../pics/images/chess\ rook\ black\ \(1\).jpg");
+            background-size: 190px;
+            background-repeat: no-repeat;
+            background-position: center;
+   
+        }
+        .c9{
+            background-image: url("../pics/images/chess\ pawn\ black.webp");
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c10{
+            background-image: url("../pics/images/chess\ pawn.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c11{
+            background-image: url("../pics/images/chess\ pawn\ black.webp");
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c12{
+            background-image: url("../pics/images/chess\ pawn.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c13{
+            background-image: url("../pics/images/chess\ pawn\ black.webp");
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c14{
+            background-image: url("../pics/images/chess\ pawn.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+        }
+        .c15{
+            background-image: url("../pics/images/chess\ pawn\ black.webp");
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c16{
+            background-image: url("../pics/images/chess\ pawn.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i1{
+            background-image: url("../pics/images/chess\ pawn.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i2{
+            background-image: url("../pics/images/chess\ pawn\ black.webp");
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i3{
+            background-image: url("../pics/images/chess\ pawn.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i4{
+            background-image: url("../pics/images/chess\ pawn\ black.webp");
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i5{
+            background-image: url("../pics/images/chess\ pawn.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i6{
+            background-image: url("../pics/images/chess\ pawn\ black.webp");
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i7{
+            background-image: url("../pics/images/chess\ pawn.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i8{
+            background-image: url("../pics/images/chess\ pawn\ black.webp");
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .j1{
+            background-image: url("../pics/images/chess\ rook\ black\ \(1\).jpg");
+            background-size: 190px;
+            background-repeat: no-repeat;
+            background-position: center;
+   
+        }
+        .j2{
+            background-image: url("../pics/images/chess\ knight.jpg");
+            background-size: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .j3{
+            background-image: url("../pics/images/chess\ bishop\ black.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .j4{
+            background-image: url("../pics/images/chess\ queen.webp");
+            background-size: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .j5{
+            background-image: url("../pics/images/chess\ king\ black.avif");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .j6{
+            background-image: url("../pics/images/chess\ bishop.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .j7{
+            background-image: url("../pics/images/chess\ knight\ black.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+        .j8{
+            
+            background-image:url("../pics/images/chess\ rook.webp") ;
+            background-size: 90px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        
+        /* Tooltip container */
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+        }
+        
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color:rgb(218, 30, 61);
+          color: #fff;
+          border-radius: 6px;
+          height: 180px;
+          width: 400px;
+          text-align: left;
+          /* Position the tooltip text - see examples below! */
+          position: absolute;
+          z-index: 1;
+        }
+        
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+        input{
+            width: 280px;
+            text-align: center;
+            background-color: aquamarine;
+            position: relative;
+            top: 10px;
+        }
+        
+        
+
+        
+        
+
+
+        
+    </style>
+   
+</head>
+<body>
+    <center>
+    <div class="tooltip">
+        <input type="text" placeholder="Hover Here For How To Play Chess Game">
+      <span class="tooltiptext">How to Play Chess: 7 Rules To Get You Started<br>
+        <ol type="1">
+            <li>Set Up The Chess Board</li>
+            <li>Learn To Move The Pieces</li>
+            <li>Discover The Special Rules</li>
+            <li>Learn Who Makes The First Move</li>
+            <li>Check Out The Rules On How To Win</li>
+            <li>Study The Basic Strategies</li>
+            <li>Practice Playing Lots Of Games</li>
+        </ol>
+      </span>
+
+    </div>
+    <h1><i>Chess Board</i></h1>
+   <table>
+    <tr>
+    <td class="c c1"></td>
+    <td class="c c2"></td>
+    <td class="c c3"></td>
+    <td class="c c4"></td>
+    <td class="c c5"></td>
+    <td class="c c6"></td>
+    <td class="c c7"></td>
+    <td class="c c8"></td>
+    </tr>
+    <tr>
+        <td class="d c9"></td>
+        <td class="d c10"></td>
+        <td class="d c11"></td>
+        <td class="d c12"></td>
+        <td class="d c13"></td>
+        <td class="d c14"></td>
+        <td class="d c15"></td>
+        <td class="d c16"></td>
+        
+    </tr>
+    <tr>
+    <td class="e e1"></td>
+    <td class="e e2"></td>
+    <td class="e e3"></td>
+    <td class="e e4"></td>
+    <td class="e e5"></td>
+    <td class="e e6"></td>
+    <td class="e e7"></td>
+    <td class="e e8"></td>
+    </tr>
+    <tr>
+        <td class="f f1"></td>
+        <td class="f f2"></td>
+        <td class="f f3"></td>
+        <td class="f f4"></td>
+        <td class="f f5"></td>
+        <td class="f f6"></td>
+        <td class="f f7"></td>
+        <td class="f f8"></td>
+    </tr>
+    <tr>
+        <td class="g g1"></td>
+        <td class="g g2"></td>
+        <td class="g g3"></td>
+        <td class="g g4"></td>
+        <td class="g g5"></td>
+        <td class="g g6"></td>
+        <td class="g g7"></td>
+        <td class="g g8"></td>
+    </tr>
+    <tr>
+        <td class="h h1"></td>
+        <td class="h h2"></td>
+        <td class="h h3"></td>
+        <td class="h h4"></td>
+        <td class="h h5"></td>
+        <td class="h h6"></td>
+        <td class="h h7"></td>
+        <td class="h h8"></td>
+    </tr>
+    <tr>
+        <td class="i i1"></td>
+        <td class="i i2"></td>
+        <td class="i i3"></td>
+        <td class="i i4"></td>
+        <td class="i i5"></td>
+        <td class="i i6"></td>
+        <td class="i i7"></td>
+        <td class="i i8"></td>
+    </tr>
+    <tr>
+        <td class="j j1"></td>
+        <td class="j j2"></td>
+        <td class="j j3"></td>
+        <td class="j j4"></td>
+        <td class="j j5"></td>
+        <td class="j j6"></td>
+        <td class="j j7"></td>
+        <td class="j j8"></td>
+    </tr>
+   </table>
+   </center>
+   
+</body>
+</html>
